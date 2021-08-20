@@ -2,3 +2,31 @@ h5{
     color: #fff;
     font-weight: 700;
 }
+p{
+    color: #fff;
+}
+.bi-hand-thumbs-up-fill,.bi-hand-thumbs-down-fill{
+    font-size: 1.5rem;
+    margin: 0 8px;
+    color:#1976d2 ;
+    cursor: pointer;
+
+
+}
+
+
+.bi-hand-thumbs-down-fill:active{
+color: red;
+} 
+.bi-hand-thumbs-up-fill:active{
+    color: green;
+
+    } 
+.bi-trash-fill{
+    font-size: 1.5rem;
+    margin-left: 180px;
+    color: red;
+    cursor: pointer;
+
+
+}
