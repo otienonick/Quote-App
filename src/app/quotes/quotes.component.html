@@ -19,12 +19,11 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
       <p class="card-text">{{quote.quote}}</p>
-      <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+      <button (click)='toggleDetails(i)' class="btn btn-primary"> Quote Details</button>
 
     </div>
-    <!-- <div *ngIf='quote.showDetails'> -->
-        <div>
-    <app-quote-details [quote] = 'quote'></app-quote-details>
+    <div *ngIf='quote.showDetails'>
+    <app-quote-details [quote] = 'quote' (isComplete) = 'deleteQuote($event,i)' ></app-quote-details>
     </div>
 
 
