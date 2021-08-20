@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background: url("src/assets/images/brett-jordan--9iwqZkaaxg-unsplash.jpg");
+     background-size: cover; 
+     background-repeat: no-repeat;
+      background-origin: brightness(50%); 
+}

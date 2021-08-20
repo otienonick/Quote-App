@@ -6,4 +6,37 @@ h1{
 p{
     font-size: 1rem;
     text-align: left;
+    color: #fff;
+    font-weight: 700;
 }
+
+.slide{
+    font-size: 6rem;
+    animation:
+     fromRight 3s;
+     color: #fff;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fromRight {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.card{
+    background: transparent;
+    box-shadow: 0 0 5px #1976d2;
+    
+}
+
