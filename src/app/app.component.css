@@ -57,7 +57,9 @@
   .toolbar #github-logo:hover {
     opacity: 0.8;
   }
-
+.toolbar span{
+    font-size: 2rem;
+}
   
 
   /* Responsive Styles */
