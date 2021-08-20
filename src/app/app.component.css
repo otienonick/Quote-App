@@ -1,0 +1,63 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar i {
+    margin: 0 16px;
+    font-size: 2rem;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .toolbar #instagram-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+  .toolbar #github-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+  .instagram-logo  path {
+      fill: #fff;
+    }
+
+    .logo {
+      fill: #fff;
+    }
+  
+
+  .toolbar #twitter-logo:hover,
+  .toolbar #instagram-logo:hover,
+  .toolbar #github-logo:hover {
+    opacity: 0.8;
+  }
+
+  
+
+  /* Responsive Styles */
