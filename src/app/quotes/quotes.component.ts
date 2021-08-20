@@ -9,17 +9,17 @@ import{Quote} from '../quote';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quote[] = [
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
-    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john'),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
+    new Quote('Jackson','Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos doloribus molestiae neque veniam.','john',new Date(2021,8,14)),
 
   ];
-  //   toggleDetails(index: number){
-  //       this.quotes[index].quoteDetails = !this.quotes[index].quoteDetails;
-  //     }
+    toggleDetails(index: number){
+        this.quotes[index].showDetails = !this.quotes[index].showDetails;
+      }
     
   constructor() { }
 
