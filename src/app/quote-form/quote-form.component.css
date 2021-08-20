@@ -1,0 +1,41 @@
+form{
+    background: transparent;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #1976d2;
+    padding: 20px;
+
+}
+input{
+    background: transparent !important;
+    box-shadow: 0 0 5px #1976d2;
+    font-weight: 700;
+    border: none;
+
+}
+textarea{
+    background: transparent !important;
+    box-shadow: 0 0 5px #1976d2;
+    font-weight: 700;
+    border: none;
+
+
+    
+
+}
+::placeholder,textarea{
+    color: #fff;
+}
+h2{
+    color: #1976d2;
+    font-weight: 700;
+    margin: 0;
+}
+#name ,textarea.ng-invalid{
+    border-left: 5px solid red;
+}
+#name.ng-valid{
+    border-left: 5px solid green;
+}
+textarea.ng-valid{
+    border-left: 5px solid green;
+}
