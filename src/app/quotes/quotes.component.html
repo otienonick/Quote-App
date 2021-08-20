@@ -14,7 +14,7 @@
 <hr>
 
 <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-3" >
+    <div class="row row-cols-1 row-cols-lg-2 g-2 g-lg-5" >
 <div class="col" *ngFor='let quote of quotes; let i = index'>
 <div class="card" style="width: 18rem;">
     <div class="card-body">
@@ -22,7 +22,8 @@
       <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
 
     </div>
-    <div *ngIf='quote.showDetails'>
+    <!-- <div *ngIf='quote.showDetails'> -->
+        <div>
     <app-quote-details [quote] = 'quote'></app-quote-details>
     </div>
 
