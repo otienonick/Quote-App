@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 60px; 
     display: flex;
     align-items: center;
     background-color: #1976d2;
@@ -26,22 +26,21 @@
   }
 
   .toolbar i {
-    margin: 0 16px;
+    margin: 16px;
     font-size: 2rem;
   }
 
   .toolbar #twitter-logo {
     height: 40px;
-    margin: 0 8px;
   }
 
   .toolbar #instagram-logo {
     height: 40px;
-    margin: 0 16px;
+    margin: 0 8px;
   }
   .toolbar #github-logo {
     height: 40px;
-    margin: 0 16px;
+    margin: 0 8px;
   }
   .instagram-logo  path {
       fill: #fff;
@@ -50,16 +49,24 @@
     .logo {
       fill: #fff;
     }
-  
+    .toolbar #twitter-logo,
+    .toolbar #instagram-logo,
+    .toolbar #github-logo{
+      transition: .8s ease-out;
+
+    }
 
   .toolbar #twitter-logo:hover,
   .toolbar #instagram-logo:hover,
   .toolbar #github-logo:hover {
     opacity: 0.8;
+    transform: translateY(-0.25rem);
   }
 .toolbar span{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
-  
+  .container{
+    margin-top: 100px;
+  }
 
   /* Responsive Styles */
