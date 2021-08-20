@@ -14,7 +14,7 @@ p{
     font-size: 6rem;
     animation:
      fromRight 3s;
-     color: #fff;
+     color: #1976d2;
     animation-delay: 1s;
     opacity: 0;
     animation-fill-mode: forwards;
