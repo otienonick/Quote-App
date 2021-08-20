@@ -10,6 +10,20 @@ import { Quote } from '../quote';
 export class QuoteDetailsComponent implements OnInit {
   @Input()
   quote!: Quote;
+  numberOfLikes: number = 0;
+  numberOfDisLikes: number = 0;
+
+
+  likeButtonClick(){
+    this.numberOfLikes++;
+
+  }
+  dislikeButtonClick(){
+    this.numberOfDisLikes++;
+
+  }
+
+
 
   constructor() { }
 
