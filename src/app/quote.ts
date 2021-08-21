@@ -1,11 +1,13 @@
 export class Quote {
+    id:number;
     author:string;
     quote:string;
     quoteDetails:string;
     showDetails:boolean;
 
-    constructor(author:string,quote:string, quoteDetails:string,public completeDate: Date  )
+    constructor(id:number,author:string,quote:string, quoteDetails:string,public completeDate: Date  )
     {
+        this.id = id;
 this.author = author;
 this.quote = quote;
 this.quoteDetails = quoteDetails;

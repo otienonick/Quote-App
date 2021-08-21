@@ -1,6 +1,6 @@
 <h5 class="card-title">~{{quote.author}}</h5>
+<p>posted by: {{quote.quoteDetails}} </p>
 <p>quote was updated {{quote.completeDate|lastDate}} day(s) ago</p>
-<p>posted by:{{quote.quoteDetails}}</p>
 <i title="upvote this quote" (click) = "likeButtonClick()"   class="bi bi-hand-thumbs-up-fill"></i><span>{{numberOfLikes}}</span>
 <i title="downvote this quote" (click) = "dislikeButtonClick()"   class="bi bi-hand-thumbs-down-fill"></i><span>{{numberOfDisLikes}}</span>
 <i  (click) = 'quoteDelete(true)' title="Delete this quote" class="bi bi-trash-fill"></i>

@@ -10,6 +10,7 @@ input{
     box-shadow: 0 0 5px #1976d2;
     font-weight: 700;
     border: none;
+    color: #fff !important;
 
 }
 textarea{
@@ -17,6 +18,7 @@ textarea{
     box-shadow: 0 0 5px #1976d2;
     font-weight: 700;
     border: none;
+    color: #fff !important;
 
 
     

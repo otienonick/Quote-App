@@ -1,14 +1,8 @@
 <div class="container col-lg-6 col-12 col-md-8">
    
-    <form #quoteForm = 'ngForm'>
+    <form (ngSubmit) = 'submitQuote()' #quoteForm = 'ngForm'>
         <h2 class="text-center">Create a new Quote</h2>
-        <div class="form-group pt-5">  
-            <input placeholder="Author's name" type="text" class="form-control"  id="author" name="author" [(ngModel)]="newQuote.author" #authorsName = 'ngModel' required>
-            <div [hidden]="authorsName.valid || authorsName.pristine" class="alert m-0 p-0 g-0">
-                <span class="text-danger">Authors name is required!</span>
-            </div>
-   
-        </div>
+     
         <div class="form-group mt-3">
   
             <textarea  placeholder="Quote" class="form-control"  rows="4" id="quote" name="quote" [(ngModel)]="newQuote.quote" #quote = 'ngModel'  required></textarea>
@@ -16,6 +10,13 @@
                 <span class="text-danger">Quote is required!</span>
               </div>
     
+        </div>
+        <div class="form-group pt-3">  
+            <input placeholder="Author's name" type="text" class="form-control"  id="author" name="author" [(ngModel)]="newQuote.author" #authorsName = 'ngModel' required>
+            <div [hidden]="authorsName.valid || authorsName.pristine" class="alert m-0 p-0 g-0">
+                <span class="text-danger">Authors name is required!</span>
+            </div>
+   
         </div>
         <div class="form-group mt-3">
   
@@ -35,8 +36,8 @@
               </div>
           
         </div>
-        <div class="text-center pb-2">
-         <button type="submit"  class="btn btn-primary mt-3">Add Quote</button>
+        <div class="text-center">
+         <button  type="submit" [disabled] = "quoteForm.invalid" class="btn btn-primary mt-3">Add Quote</button>
         </div>
     </form>
   </div>
