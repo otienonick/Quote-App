@@ -18,5 +18,7 @@ this.addQuote.emit(this.newQuote);
 
   ngOnInit(): void {
   }
+  
+
 
 }
