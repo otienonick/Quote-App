@@ -30,10 +30,13 @@ h2{
     font-weight: 700;
     margin: 0;
 }
-#name ,textarea.ng-invalid{
+#author,#quoteDetails,textarea.ng-invalid{
     border-left: 5px solid red;
 }
-#name.ng-valid{
+#author.ng-valid{
+    border-left: 5px solid green;
+}
+#quoteDetails.ng-valid{
     border-left: 5px solid green;
 }
 textarea.ng-valid{
