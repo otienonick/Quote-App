@@ -24,11 +24,10 @@ textarea{
     
 
 }
-::placeholder,textarea{
-    color: #fff;
-}
+
 h2{
     color: #1976d2;
+    text-shadow: -2px 0 white ,0 2px white,2px 0 white,0 -2px #fff ;
     font-weight: 700;
     margin: 0;
 }
